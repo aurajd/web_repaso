@@ -1,0 +1,199 @@
+<!--Aura Janeiro Díaz-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto ambiental compras online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="imagen/logotipo.png" alt="logo de la escuela">
+        <h1>Impacto ambiental compras online</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="sostenibilidad.html">SOSTENIBILIDAD</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!--El main servirá como contenedor principal para el contenido de la página-->
+        <section>
+            <p>
+                Mejorar la sostenibilidad de las compras online es un trabajo de grupo, es imposible reducir el impacto del comercio online si no ponen su granito de arena todos los grupos implicados.
+                En la siguiente tabla podemos observar ciertas acciones que pueden ayudar a hacer el comercio online mas sostenible:
+            </p>
+            <!-- Creamos una tabla usando table -->
+            <table>
+                <!-- Con tr se crea una columna y con th se crea una celda del encabezado colspan hace que ocupe varias columnas -->
+                <tr><th colspan="2">Acciones para un comercio sostenible</th></tr>
+                <!-- tbody permite agrupar grupos columnas para así aplicarles estilos mas fácilmente -->
+                <tbody>
+                    <tr>
+                        <!-- rowspan hace que la celda ocupe varias filas -->
+                        <th rowspan="4">
+                            Ciudadanos Responsables
+                        </th>
+                        <!-- td crea una celda normal -->
+                        <td>
+                            Evita compras compulsivas y compra en línea solo cuando sea necesario.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Intenta agrupar tus compras en un solo pedido para reducir los repartos necesarios.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Asegúrate de que haya alguien para recibir el envío o utiliza puntos de recogida para evitar entregas fallidas.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Intenta utilizar los envíos exprés lo menos posible para minimizar la cantidad de vehículos usados por las empresas.
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th rowspan="2">
+                            Empresas Logísticas
+                        </th>
+                        <td>
+                            Utilizar vehículos de bajas emisiones para distancias largas y medios de transporte no motorizados en desplazamientos cercanos.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Agrupar los pedidos destinados a áreas cercanas para reducir el número de viajes y disminuir la huella ambiental.
+                        </td>
+                    </tr>    
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th rowspan="4">
+                            Plataformas de Compras
+                        </th>
+                        <td>
+                            Mostrar advertencias sobre opciones poco sostenibles y sugerir alternativas más amigables con el medio ambiente.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Usar flotas de vehículos ecológicos o empresas de reparto con criterios de sostenibilidad.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Promover el comercio electrónico sostenible en su publicidad.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Ser transparentes en sus prácticas.
+                        </td>
+                    </tr>   
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Encuesta compras online</h2>
+            <form action="form.php" method="post">
+                <div class="div_inputs">
+                    <label for="nombre">Introduce tu nombre:</label>
+                    <!--Un input tipo text para introducir el nombre-->
+                    <input type="text" name="nombre" id="nombre" >
+                </div>
+                <div class="div_inputs">
+                    <!-- fieldset permite agrupar varios campos de un formulario -->
+                    <fieldset>
+                        <!-- legend indica el título de un fieldset -->
+                        <legend>Indica tu género</legend>
+                        <!--Varios input tipo radio con el mismo name, lo que hace que solo uno sea seleccionable-->
+                        <div>
+                            <input type="radio" name="genero" value="masculino" id="masculino" >
+                            <label for="masculino">Masculino</label>
+                        </div>  
+                        <div>
+                            <input type="radio" name="genero" value="femenino" id="femenino">
+                            <label for="femenino">Femenino</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="genero" value="otro" id="otro">
+                            <label for="otro">Otro</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="genero" value="no" id="no">
+                            <label for="no">Prefiero no decirlo</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="div_inputs">
+                    <fieldset>
+                        <legend>¿Con qué frecuencia compras online?</legend>
+                        <!--Varios input tipo radio con el mismo name, lo que hace que solo uno sea seleccionable-->
+                        <div>
+                            <input type="radio" name="frecuencia" value="nunca" id="nunca" >
+                            <label for="nunca">Nunca</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="frecuencia" value="ocasionalmente" id="ocasionalmente">
+                            <label for="ocasionalmente">Ocasionalmente</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="frecuencia" value="frecuentemente" id="frecuentemente">
+                            <label for="frecuentemente">Frecuentemente</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="div_inputs">
+                    <fieldset>
+                        <legend>Tipo de productos que compras en línea (selecciona todas las que apliquen):</legend>
+                        <!--Varios input tipo checkbox con un array en el name, lo que hace que puedas seleccionar multiples opciones-->
+                        <div>    
+                            <input type="checkbox" name="tipo[]" value="ropa" id="ropa">
+                            <label for="ropa">Ropa</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="tipo[]" value="electronicos" id="electronicos">
+                            <label for="electronicos">Productos electrónicos</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="tipo[]" value="alimentos" id="alimentos">
+                            <label for="alimentos">Alimentos</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="tipo[]" value="otros" id="otros">
+                            <label for="otros">Otros</label>
+                        </div>
+                   </fieldset>
+                </div>
+                <div class="div_inputs">
+                    <!--Un input tipo checkbox con solo una opción-->
+                    <input type="checkbox" name="acepto" id="acepto">
+                    <label for="acepto">Acepto que se use mi información para una encuesta</label>
+                </div>
+                <div class="div_inputs">
+                    <label for="select">¿Te ha interesado el tema de la página?</label>
+                    <!--Un select con tres opciones-->
+                    <select name="interes">
+                        <option value="mucho">Me ha interesado mucho</option>
+                        <option value="poco">Me ha interesado poco</option>
+                        <option value="poco">No me ha interesado</option>
+                    </select>
+                </div>
+                <div class="div_inputs">
+                    <!-- Un input tipo submit para enviar el formulario-->
+                    <input type="submit" value="Enviar">
+                </div>        
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>COPYRIGHT © 2023 AURA JANEIRO. TODOS LOS DERECHOS RESERVADOS.</p>
+    </footer>
+</body>
+</html>

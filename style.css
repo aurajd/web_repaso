@@ -1,0 +1,171 @@
+/*Aura Janeiro Díaz*/
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    width: 1280px;
+    margin: auto;
+    /*Con background-image indicamos que el fondo del elemento tiene como fondo una imagen*/
+    background-image: url("imagen/imagen.jpg");
+    /*Usamos background-size: cover para escalar la imagen de fondo y que cubra por completo el fondo*/
+    background-size: cover;
+    /*background-attachment: fixed hace que la imagen se desplaze con la pantalla al hacer scroll*/
+    background-attachment: fixed;
+    /*Le añadimos la fuente Arial a todos los elementos dentro de la página*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 80px;
+    width: 1280px;
+    /*Le ponemos fondo blanco al header*/
+    background-color: white;
+}
+
+header img {
+    height: 60px;
+    margin: 10px auto;
+    /*Flotamos la imagen a la derecha para que se muestre en la parte derechas del header*/
+    float: right;
+}
+
+header h1 {
+    line-height: 80px;
+    margin: 0 320px;
+    text-align: center;
+    width: 640px;
+    /* Indicamos que el título de la página será del color con código hexadecimal #006293 */
+    color: #006293;
+}
+
+nav {
+    /*Le ponemos fondo del color con código hexadecimal #006293 al nav*/
+    background-color: #006293;
+    width: 1280px;
+}
+
+nav ul {
+    /* Quitamos los marcadores de la lista con list-style-type: none y centramos con text-align: center*/
+    list-style-type: none;
+    text-align: center;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}   
+
+nav li {
+    /* Usamos display: inline-block para que los elementos no ocupen toda la linea pero poder posicionarlos */
+    display: inline-block;
+    height: 60px;
+}
+
+nav a {
+    /*Le ponemos fondo del color con código hexadecimal #0079b6 al enlace dentro del nav*/
+    background-color: #0079b6;
+    /* Indicamos que los enlaces del menú de navegación será de color blanco */
+    color: white;
+    /* Quitamos el subrayado con text-decoration: none */
+    text-decoration: none;
+    line-height: 60px;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    /*Le ponemos fondo del color con código hexadecimal #003f5f al enlace dentro del nav cuando pasamos el ratón por encima*/
+    background-color: #003f5f;
+}
+
+main {
+    width: 1100px;
+    padding: 5px 0;
+    margin: 10px auto;
+    border-radius: 4px;
+    /*Le ponemos fondo del color con código hexadecimal #003f5f al contenedor principal*/
+    background-color: #006293;
+}
+
+section {
+    width: 960px;
+    margin: 20px auto;
+    border-radius: 4px;
+    padding: 20px;
+    /*Le ponemos fondo de color blanco a las secciones*/
+    background-color: white;
+}
+
+span {
+    /* Indicamos que todo texto contenido en span llevará negrita */
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}
+
+ol {
+    /* Indicamos que el estilo del marcador de la lista será con números romanos en mayúsculas */
+    list-style-type: upper-roman;
+}
+
+ol p {
+    margin-top: 0;
+}
+
+figure img {
+    /* Hacemos que la imagen sea una caja en bloque, le damos una anchura y la centramos con margin auto */
+    display: block;
+    width: 500px;
+    margin: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+table {
+    width: 700px;
+    margin: auto;
+    /* El border-collapse: collapse hace que no haya espacio entre bordes de celdas en la tabla */
+    border-collapse: collapse;
+}
+
+tbody,
+th {
+    /* Le ponemos un borde mas grueso a los tbody y th */
+    border: 4px solid #006293;
+}
+
+td {
+    /* Le ponemos un borde mas fino a los td */
+    border: 2px solid #006293;
+    padding: 10px;
+}
+
+.div_inputs {
+    margin: 10px 20px;
+}
+
+label[for="select"] {
+    display: block;
+}
+
+#texto {
+    display: block;
+}
+
+footer {
+    height: 80px;
+    width: 1280px;
+    /*Le ponemos fondo del color con código hexadecimal #006293 al footer*/
+    background-color: #006293;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    /* Indicamos que el texto del footer será de color blanco */
+    color: white;
+    line-height: 80px;
+}
